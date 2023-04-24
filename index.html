@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Todo App</title>
+  <meta charset="utf-8">
   <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
       rel="stylesheet"
@@ -11,24 +12,23 @@
       href="style.css"
       type="text/css"
       media="screen"
-      charset="utf-8"
   >
 </head>
 <body>
 <div class="matrix-image-container">
-  <img src="./eisenhower-matrix.jpg">
+  <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix image">
   <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">
     Want more details?
   </a>
 </div>
 <div class="centered-main-page-element">
-  <p id="add-item-section">
-    <label for="new-task">Add Item</label>
-  <div class="task-row-wrapper">
-    <input id="new-task" class="task" type="text">
-    <button>Add</button>
-  </div>
-  </p>
+  <section id="add-item-section">
+    <h3 class="new-task-title">Add Item</h3>
+    <div class="task-row-wrapper">
+      <input id="new-task" class="task" type="text">
+      <button>Add</button>
+    </div>
+  </section>
   <h3>Todo</h3>
   <ul id="incomplete-tasks">
     <li class="task-list-element">
@@ -37,7 +37,7 @@
       <input type="text" class="task">
       <button class="edit">Edit</button>
       <button class="delete">
-        <img src="./remove.svg">
+        <img src="./remove.svg" alt="remove">
       </button>
     </li>
     <li class="edit-mode task-list-element">
@@ -46,7 +46,7 @@
       <input type="text" value="Go Shopping" class="task">
       <button class="edit">Save</button>
       <button class="delete">
-        <img src="./remove.svg">
+        <img src="./remove.svg" alt="remove">
       </button>
     </li>
   </ul>
@@ -58,12 +58,12 @@
       <input type="text" class="task">
       <button class="edit">Edit</button>
       <button class="delete">
-        <img src="./remove.svg">
+        <img src="./remove.svg" alt="remove">
       </button>
     </li>
   </ul>
 </div>
 
-<script type="text/javascript" src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
