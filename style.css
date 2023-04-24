@@ -5,30 +5,30 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.matrix-image-container {
+.matrix-description-container {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.matrix-image-container img {
+.matrix-description-container__image {
   width: 100%;
 }
 
-.matrix-image-container .more-info {
+.more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .matrix-image-container {
+  .matrix-description-container {
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.main-page {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,7 +40,7 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-item-section__task-wrapper {
   display: flex;
 }
 
@@ -102,17 +102,17 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-.new-task-title {
+.add-item-section__title {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.add-item-section__task {
   width: 318px;
 }
 
 /* Task list */
-.task-list-element {
+.task-list__element {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -121,22 +121,22 @@ input[type="text"]:focus {
   align-items: center;
 }
 
-.task-list-element > * {
+.task-list__element > * {
   vertical-align: middle;
 }
 
-.task-list-element > input[type="checkbox"] {
+.task-list__element > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.task-list-element > label {
+.task-list__element > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-list-element > input[type="text"] {
+.task-list__element > input[type="text"] {
   width: 226px;
 }
 
@@ -157,7 +157,7 @@ input[type="text"]:focus {
 }
 
 /* Edit Task */
-.task-list-element input[type=text] {
+.task-list__element input[type=text] {
   display: none;
 }
 

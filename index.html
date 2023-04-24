@@ -14,24 +14,30 @@
       media="screen"
   >
 </head>
+
 <body>
-<div class="matrix-image-container">
-  <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix image">
+<header class="matrix-description-container">
+  <img
+      class="matrix-description-container__image"
+      src="./eisenhower-matrix.jpg"
+      alt="Eisenhower matrix image"
+  >
   <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">
     Want more details?
   </a>
-</div>
-<div class="centered-main-page-element">
-  <section id="add-item-section">
-    <h3 class="new-task-title">Add Item</h3>
-    <div class="task-row-wrapper">
-      <input id="new-task" class="task" type="text">
+</header>
+
+<div class="main-page">
+  <section class="add-item-section">
+    <h3 class="add-item-section__title">Add Item</h3>
+    <div class="add-item-section__task-wrapper">
+      <input id="new-task" class="add-item-section__task task" type="text">
       <button>Add</button>
     </div>
   </section>
   <h3>Todo</h3>
-  <ul id="incomplete-tasks">
-    <li class="task-list-element">
+  <ul id="incomplete-tasks" class="task-list">
+    <li class="task-list__element">
       <input type="checkbox">
       <label class="task">Pay Bills</label>
       <input type="text" class="task">
@@ -40,7 +46,7 @@
         <img src="./remove.svg" alt="remove">
       </button>
     </li>
-    <li class="edit-mode task-list-element">
+    <li class="edit-mode task-list__element">
       <input type="checkbox">
       <label class="task">Go Shopping</label>
       <input type="text" value="Go Shopping" class="task">
@@ -51,8 +57,8 @@
     </li>
   </ul>
   <h3>Completed</h3>
-  <ul id="completed-tasks">
-    <li class="task-list-element">
+  <ul id="completed-tasks" class="task-list">
+    <li class="task-list__element">
       <input type="checkbox" checked>
       <label class="task">See the Doctor</label>
       <input type="text" class="task">
